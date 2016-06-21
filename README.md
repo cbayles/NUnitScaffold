@@ -13,10 +13,8 @@ If you want to run the unit tests automatically when a .cs file changes, you can
         npm install -g gulp-cli
 
 3. In the root project folder (where you cloned this repo), install npm dependencies:
-```
-npm install
-```
 
+        npm install
 
 ## Usage
 
