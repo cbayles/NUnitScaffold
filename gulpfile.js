@@ -1,6 +1,7 @@
 "use strict";
 var gulp = require('gulp'),
     msbuild = require("gulp-msbuild"),
+    nugetRestore = require('gulp-nuget-restore'),
     nunit = require('gulp-nunit-runner');
 
 gulp.task('default', ['test', 'watch']);
@@ -11,6 +12,7 @@ gulp.task('watch', function() {
 
 gulp.task("compile", function() {
     return gulp.src("./NUnitScaffold.sln")
+        .pipe(nugetRestore())
         .pipe(msbuild({
             properties: {
                 Configuration: 'Debug'
