@@ -8,10 +8,16 @@ If you want to run the unit tests automatically when a .cs file changes, you can
 
 1. If you haven't already installed node.js, [get it here](https://nodejs.org/en/download/)
 
-2. Install gulp:
+2. If you haven't already installed gulp, install it globally:
 ```
-npm install -g gulp-cli && npm install
+npm install -g gulp-cli
 ```
+
+3. In the root project folder (where you cloned this repo), install npm dependencies:
+```
+npm install
+```
+
 
 ## Usage
 
