@@ -24,14 +24,14 @@ function getArgOrDefault(key, defaultVal){
 };
 
 gulp.task("compile", function() {
-    let msBuildVersion = getArgOrDefault('vs', 14.0)-0;
+    let toolsVersion = getArgOrDefault('toolsVersion', 14.0)-0;
     return gulp.src("./NUnitScaffold.sln")
         .pipe(nugetRestore())
         .pipe(msbuild({
             properties: {
                 Configuration: 'Debug'
             },
-            toolsVersion: msBuildVersion,
+            toolsVersion: toolsVersion,
             stdout: true
         }));
 });

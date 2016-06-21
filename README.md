@@ -19,7 +19,7 @@ npm install -g gulp-cli && npm install
 gulp
 ```
 
-If you don't have .Net Framework 4.6 or Visual Studio 2015 installed, you can specify a lower msbuild version number by providing the `vs` argument like so:
+If you don't have .Net Framework 4.6 or Visual Studio 2015 installed, you can specify a lower msbuild version number by providing the `toolsVersion` argument like so:
 ```
-gulp --vs=12.0
+gulp --toolsVersion=12.0
 ```
